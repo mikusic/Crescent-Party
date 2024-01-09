@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Crescent Party</title>
+  <meta name="description" content="関西学院大学アカペラサークルCrescent Partyへようこそ">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/index.css" rel="stylesheet" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
+</head>
+
+<body>
+  <div id="home" class="big-bg">
+    <header class="page-header wrapper">
+      <h1>
+        <a href="index.html"><img class="logo" src="images/crepalogo.png" alt="クレパロゴ" /></a>
+      </h1>
+      <nav>
+        <button class="btn-menu">Menu</button>
+        <ul class="main-nav">
+          <li><a href="activity.html">Activity</a></li>
+          <li><a href="part.html">Part</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="home-content wrapper">
+      <p>
+      <h2 class="page-title">Crescent Party</h2>
+      <p class="page-subtitle">私たちと一緒に歌いませんか？音楽未経験も大歓迎！</p>
+      <a class="button" href="activity.html">活動内容を見る</a>
+    </div>
+    <!-- /.home-content -->
+  </div>
+  <!-- #home -->
+</body>
+
+<script>
+  const btn = document.querySelector(".btn-menu");
+  const nav = document.querySelector(".main-nav");
+
+  btn.addEventListener("click", () => {
+    nav.classList.toggle("open-menu");
+    if (btn.innerHTML === "Menu") {
+      btn.innerHTML = "Close";
+    } else {
+      btn.innerHTML = "Menu";
+    }
+  });
+</script>
+
+</html>

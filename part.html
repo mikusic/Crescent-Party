@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>Crescent Party | パート紹介</title>
+    <meta
+      name="description"
+      content="バンドのパート紹介"
+    />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Philosopher"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/part.css" rel="stylesheet" />
+  </head>
+  
+  <body>
+    <div class="big-bg">
+      <header class="page-header wrapper">
+        <h1>
+          <a href="index.html">
+            <a href="index.html"><img class="logo" src="images/crepalogo.png" alt="クレパロゴ" /></a>
+          </a>
+        </h1>
+        <nav>
+          <button class="btn-menu">Menu</button>
+          <ul class="main-nav">
+            <li><a href="activity.html">Activity</a></li>
+            <li><a href="part.html">Part</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="part-title wrapper">
+        <h2>パート紹介</h2>
+        <p>
+          バンドを構成するメンバーはそれぞれ担当するパートを持っています。<br>
+          このページでは、各パートの特徴を紹介していきます。
+        </p>
+      </div>
+    </div>
+    <div class="about wrapper">
+      <div class="about__body">
+        <div class="about__body-item">
+          <div class="about__body-item-img">
+            <img src="./images/part-lead.jpg" />
+          </div>
+          <div class="about__body-item-texts">
+            <div class="about__body-item-texts-copy">リード</div>
+            <p class="about__body-item-texts-p">
+              軽音などではボーカル、グループのアーティストなどではメインボーカルなどと呼ばれる役割のことを、アカペラでは「リード」と呼びます。
+              主に、「主旋律・メロディー」を担当する人です。
+              歌の面だけでなく練習の時などでも、バントを引っ張っていくような場面が多いです！
+              「歌が上手い人」が担当するパートだと思われがちですがそんなことはありません！リードは自分の歌声の個性を爆発させることができるパートです。
+            </p>
+          </div>
+        </div>
+        <div class="about__body-item">
+          <div class="about__body-item-texts">
+            <div class="about__body-item-texts-copy">コーラス</div>
+            <p class="about__body-item-texts-p">
+              コーラスは、「ハーモニー」の担当です！
+              メロディーを歌っているリードのバックで、楽曲の伴奏にあたる部分を、主に3人でハモり、作っています。
+              高音を担当する人を「TOP（または1st）」、合唱でいうメゾソプラノのようにハーモニーの真ん中を担当する人を「2nd」、低音を担当する人を「3rd」と呼びます。
+            </p>
+          </div>
+          <div class="about__body-item-img">
+            <img src="./images/part-chorus.jpg" />
+          </div>
+        </div>
+        <div class="about__body-item">
+          <div class="about__body-item-img">
+            <img src="./images/part-bass.jpg" />
+          </div>
+          <div class="about__body-item-texts">
+            <div class="about__body-item-texts-copy">ベース</div>
+            <p class="about__body-item-texts-p">
+              その名の通り、曲の土台となるパートです。
+              和音の基本の低音で、曲を支えています。
+              パーカスと一緒に、「リズム隊」と言われています。
+              また、音の正確さ、リズム感がとても大事なパートです。
+              男性がしているイメージがあるかもしれませんが、ギャルバンなどでは、女性がやっています！
+            </p>
+          </div>
+        </div>
+        <div class="about__body-item">
+          <div class="about__body-item-texts">
+            <div class="about__body-item-texts-copy">パーカス</div>
+            <p class="about__body-item-texts-p">
+              楽器でいうところの「ドラム」を担当しており、曲の「リズム」役割を持っています！
+              シンバルやバスドラムなども、練習をすれば、全て口だけで鳴らせるようになるものなのです。
+              クレパには、ビートボックスをやっていた人や、高校でアカペラ部だった人など、経験者もいますが、大学から始めた人が多いです！
+              音をとることに自信が無い人でもパーカスで輝くことができるかもしれません！
+            </p>
+          </div>
+          <div class="about__body-item-img">
+            <img src="./images/part-perc.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="wrapper">
+        <p><small>&copy; 2023 Miku Karashima</small></p>
+      </div>
+    </footer>
+  </body>
+
+  <script>
+    const btn = document.querySelector(".btn-menu");
+    const nav = document.querySelector(".main-nav");
+  
+    btn.addEventListener("click", () => {
+      nav.classList.toggle("open-menu");
+      if (btn.innerHTML === "Menu") {
+        btn.innerHTML = "Close";
+      } else {
+        btn.innerHTML = "Menu";
+      }
+    });
+  </script>
+
+</html>

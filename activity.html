@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>Crescent Party | 活動内容</title>
+    <meta
+      name="description"
+      content="Crescent Partyの活動内容"
+    />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/activity.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.3.2/luminous-basic.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+
+  <body>
+    <div id="activity" class="big-bg">
+      <header class="page-header wrapper">
+        <h1>
+          <a href="index.html">
+            <a href="index.html"><img class="logo" src="images/crepalogo.png" alt="クレパロゴ" /></a>
+          </a>
+        </h1>
+        <nav>
+          <button class="btn-menu">Menu</button>
+          <ul class="main-nav">
+            <li><a href="activity.html">Activity</a></li>
+            <li><a href="part.html">Part</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="activity-header wrapper">
+        <h2 class="page-title">Crescent Partyとは？</h2>
+        <p>
+          Crescent Partyは、関西学院大学のアカペラサークルです。<br>
+          関学生はもちろん、他大学の子も所属しているインカレサークルです。<br>
+          アカペラ以外にも、さまざまなイベントがあるため交流の輪が広がりやすいです。<br>
+        </p>
+      </div>
+    </div>
+
+    <!-- #home -->
+
+    <div class="activity-content wrapper">
+      <div class="content">
+        <div class="image">
+          <a class="gallery" href="images/activity-acapella.jpg" data-aos="fade-up">
+            <img src="images/activity-acapella.jpg" alt="アカペラとは？" />
+          </a>
+        </div>
+        <div class="description">
+          <h2 class="content-title">アカペラとは？</h2>
+          <p>
+            楽器を使わず音楽を奏でる演奏法のことです。
+            リード・コーラス・ベース・パーカスのパートで構成され、全て声だけで表現します。
+          </p>
+        </div>
+      </div>
+      <div class="content">
+        <div class="image">
+          <a class="gallery" href="images/activity-band.jpg" data-aos="fade-up">
+            <img src="images/activity-band.jpg" alt="バンドについて" />
+          </a>
+        </div class="description">
+        <div class="description">
+          <h2 class="content-title">バンドについて</h2>
+          <p>
+            アカペラをするにあたって、4人から7人で1つのバンドを組みます。
+            その中でも、「企画バンド」と「既存バンド」というものがあります。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="wrapper">
+        <p><small>&copy; 2023 Miku Karashima</small></p>
+      </div>
+    </footer>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.3.2/luminous.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    const btn = document.querySelector(".btn-menu");
+    const nav = document.querySelector(".main-nav");
+
+    btn.addEventListener("click", () => {
+      nav.classList.toggle("open-menu");
+      if (btn.innerHTML === "Menu") {
+        btn.innerHTML = "Close";
+      } else {
+        btn.innerHTML = "Menu";
+      }
+    });
+  </script>
+
+</html>
