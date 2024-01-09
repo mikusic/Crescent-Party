@@ -1,0 +1,40 @@
+.home-content {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.home-content p {
+    font-size: 1.125rem;
+    margin: 10px 0 42px;
+}
+
+/* 見出し */
+.page-title {
+    color: #ddd;
+    font-size: 5rem;
+    font-family: "Rubik Doodle Shadow";
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.page-subtitle {
+    color: #ddd;
+    font-size: 3rem;
+    font-family: "M PLUS 1p";
+    font-weight: normal;
+}
+
+/* 大きな背景画像 */
+.big-bg {
+    background-size: cover;
+    background-position: center top;
+}
+
+#home {
+    background-image: url(../images/home-bg.jpg);
+    min-height: 100vh;
+}
+
+#home .page-title {
+    text-transform: none;
+}
