@@ -1,0 +1,63 @@
+#activity {
+    background-image: url(../images/activity-bg.jpg);
+    min-height: 100vh;
+}
+
+/** ヘッダー */
+.activity-header {
+    max-width: 800px;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.activity-header .page-title {
+    color: #ddd;
+    font-size: 3rem;
+    font-family: "M PLUS 1p";
+    font-weight: bolder;
+}
+  
+.activity-header p {
+    color: #ddd;
+    font-size: 1.125rem;
+    font-family: "M PLUS 1p";
+    margin: 10px 0 0;
+}
+
+/** コンテンツ */
+.activity-content {
+    width: 950px;
+    text-align: center;
+    margin-top: 60px; 
+    margin-bottom: 70px; 
+}
+
+.content {
+    display: flex;
+    margin-top: 40px
+}
+
+.content .image {
+    width: 370px;
+    margin-right: 30px;
+}
+
+.content .description {
+    margin-top: 30px;
+    width: 400px;
+}
+
+.content .content-title {
+    color: #333;
+    font-size: 1.6rem;
+    font-family: "M PLUS 1p";
+}
+
+.content p {
+    color: #333;
+    font-size: 1rem;
+    font-family: "M PLUS 1p";
+    margin: 10px 0 0;
+}
+
+  

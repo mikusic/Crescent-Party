@@ -1,0 +1,124 @@
+#contact {
+    background-image: url(../images/contact-bg.jpg);
+    min-height: 100vh;
+}
+
+/** ヘッダー */
+.contact-header {
+    max-width: 800px;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.contact-header .page-title {
+    color: #333;
+    font-size: 3rem;
+    font-family: "M PLUS 1p";
+    font-weight: bolder;
+}
+  
+.contact-header p {
+    color: #333;
+    font-size: 1.125rem;
+    font-family: "M PLUS 1p";
+    margin: 10px 0 0;
+}
+
+/* フォーム */
+form {
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+form div {
+    margin-bottom: 18px;
+}
+
+label {
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+    font-family: "M PLUS 1p";
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px #fff solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    max-width: 360px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    transform: scale(2.0);
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 20px;
+}
+
+textarea {
+    width: 100%;
+    max-width: 480px;
+    height: 6rem;
+}
+
+input[type="submit"] {
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+}
+
+/* 地図 */
+#location {
+    padding: 4% 0;
+}
+  
+#location .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.location-info {
+    width: 22%;
+}
+  
+.location-info p {
+    padding: 12px 10px;
+}
+  
+.location-map {
+    width: 74%;
+}
+  
+/* iframe */
+iframe {
+    width: 100%;
+}
+  
+/* SNS */
+#sns {
+    background: #faf7f0;
+    padding: 4% 0;
+}
+  
+#sns .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+  
+#sns .sub-title {
+    margin-bottom: 30px;
+}
+  
+.sns-box {
+    width: 30%;
+}
